@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Send To Me</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div id="send">
+				<h2>SEND MESSAGE</h2>
+				<textarea id="msg" placeholder="Enter..." rows="6" cols="30"></textarea>
+				<input type="text" id="refsend" placeholder="Refference"/><br/>
+        		<button id="sendBtn" onclick="send()">SEND</button>
+			</div>
+
+			<div id="receive">
+				<h2>RECEIVE MESSAGE</h2>
+				<input type="text" id="refrecv" placeholder="Refference"/>
+				<textarea id="recvMsg" rows="6" cols="30"></textarea>
+				<button id="copyBtn" onclick="copyMsg()">Copy</button><br/>
+        		<button id="recvBtn" onclick="recv()">RECEIVE</button>
+			</div>
+			
+			<div class="sr">
+				<div class="col"><button id="sendPG" onclick="gotosend()">SEND</button></div>
+				<div class="col"><button id="recvPG" onclick="gotorecv()">RECEIVE</button></div>
+			</div>
+
+		</div>
+	</body>
+</html>

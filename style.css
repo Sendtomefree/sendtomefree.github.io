@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(179, 177, 177);
+}
+.container {
+  margin: 8% auto;
+  position: relative;
+  width: 340px;
+  border-radius: 5px;
+  height: 400px;
+  overflow: hidden;
+  background-color: white;
+}
+.container #send,#receive {
+  position: absolute;
+  left: 20px;
+  transition: 0.5s;
+}
+#receive {
+  left: 420px;
+}
+#send,#receive {
+  text-align: center;
+  padding-bottom: 50px;
+  color: #777;
+}
+h2 {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  color: #777;
+}
+textarea {
+  margin-bottom: 5px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+#refsend,#refrecv {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  height: 35px;
+  background-color: #f8f8f8;
+}
+button {
+  margin-bottom: 10px;
+}
+#copyBtn {
+  width: 90px;
+  height: 25px;
+  margin: 0 10px 5px;
+  background-color:rgb(9, 16, 16);
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  color: rgb(253, 251, 251);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#sendBtn, #recvBtn {
+  width: 110px;
+  height: 35px;
+  margin: 0 10px;
+  background-color:cadetblue;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  color: rgb(253, 251, 251);
+  cursor: pointer;
+}
+.sr {
+  width: 340px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+.col {
+  width: 170px;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+#sendPG {
+  background-color: cadetblue;
+}
+#sendPG,#recvPG {
+  border: none;
+  width: 170px;
+  margin-top: 10px;
+  height: 40px;
+  background-color: fff;
+  cursor: pointer;
+}
