@@ -14,7 +14,6 @@ firebase.initializeApp(firebaseConfig);
 function send() {
     var msg = getElementVal("msg");
     var reff = getElementVal("refsend");
-    var img = document.getElementById("img").innerHTML;
     if(reff.length > 0 && msg != "") {
         saveMessages(msg, reff);
         alert("Message sent successfully!");
